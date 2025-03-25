@@ -40,32 +40,7 @@ function guidGenerator() {
 }
 
 export default function HomeScreen() {
-  const [items, setItems] = useState<Item[]>([
-    {
-      name: "Shoes",
-      quantity: 5,
-      id: "1",
-      isChecked: true,
-    },
-    {
-      name: "T-shirt",
-      quantity: 10,
-      id: "2",
-      isChecked: false,
-    },
-    {
-      name: "Battery",
-      quantity: 20,
-      id: "4",
-      isChecked: false,
-    },
-    {
-      name: "Shorts",
-      quantity: 3,
-      id: "3",
-      isChecked: false,
-    },
-  ]);
+  const [items, setItems] = useState<Item[]>([]);
   const [toAdd, setToAdd] = useState<Record<string, string>>();
   const [isOpenSheet, setOpenSheet] = useState(false);
 
